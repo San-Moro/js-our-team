@@ -37,3 +37,29 @@ let membersArray = [
       photo: "barbara-ramos-graphic-designer.jpg",
     }, 
 ];
+console.log(membersArray);
+
+// MILESTONE 1:
+// Stampare su console le informazioni di nome, ruolo e la stringa della foto
+const cardMember = document.getElementById("card");
+console.log(cardMember);
+// Scorro tutto il contenuto dell'Array con il ciclo for
+for(let i = 0; i < membersArray.length; i++) {
+    const member = membersArray[i];
+    console.log(member);
+    // elementi dentro l'array sono object quindi faccio ciclo for in 
+    // for(let key in member) {
+    //     console.log(key, member[key])
+
+        // MILESTONE 2:
+        // Stampare le stesse informazioni su DOM sottoforma di stringhe
+        cardMember.innerHTML += `
+            <h1>${member["name"]}</h1>
+            <h3>${member["role"]}</h3>
+            <img>${member["photo"]}
+        `
+    }
+
+
+
+
