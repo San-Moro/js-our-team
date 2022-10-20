@@ -58,8 +58,8 @@ for(let i = 0; i < membersArray.length; i++) {
             <h3>${member["role"]}</h3>
             <img>${member["photo"]}
         `
-    }
-
+    
+}
 
 
 
